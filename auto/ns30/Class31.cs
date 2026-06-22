@@ -331,6 +331,7 @@ internal class Class31
 
 	private static int smethod_5(string[] string_4)
 	{
+		return 1; // License check bypassed
 		int result = 0;
 		long num = 0L;
 		if (string_4 == null || string_4.Length < 2)

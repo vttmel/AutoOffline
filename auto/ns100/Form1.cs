@@ -6757,14 +6757,14 @@ public class Form1 : Form
 		this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
 		this.tabPage14.Size = new System.Drawing.Size(252, 78);
 		this.tabPage14.TabIndex = 0;
-		this.tabPage14.Text = "Thông tin License Bang hội";
+		this.tabPage14.Text = "Thông tin Bang hội";
 		this.tabPage14.UseVisualStyleBackColor = true;
 		this.richTextBoxBHO.Location = new System.Drawing.Point(1, 1);
 		this.richTextBoxBHO.Name = "richTextBoxBHO";
 		this.richTextBoxBHO.ReadOnly = true;
 		this.richTextBoxBHO.Size = new System.Drawing.Size(185, 48);
 		this.richTextBoxBHO.TabIndex = 142;
-		this.richTextBoxBHO.Text = "Đang kết nối server, xin vui lòng chờ chút xíu...";
+		this.richTextBoxBHO.Text = "Auto Free 100% cho JX Offline by MEL";
 		this.label11.AutoSize = true;
 		this.label11.BackColor = System.Drawing.SystemColors.Control;
 		this.label11.ForeColor = System.Drawing.Color.Black;
@@ -10559,10 +10559,7 @@ public class Form1 : Form
 			buttonAdd.Visible = true;
 			buttonAdd.Enabled = true;
 			GClass1.smethod_3();
-			if (GClass1.int_4 == 2)
-			{
-				richTextBoxBHO.Text = GClass1.smethod_4();
-			}
+			// License display removed
 			if (!bool_13 && bool_12)
 			{
 				if (GClass1.string_1 != null && !(GClass1.string_1 == "True"))
@@ -11575,7 +11572,7 @@ public class Form1 : Form
 			string_15 = text.Trim();
 			GClass1.int_2 = 2;
 			Class66.smethod_11(Class66.smethod_1(), "textIDSudung", string_15, "", 0);
-			richTextBoxBHO.Text = "ID [" + string_15 + "] sẽ được sử dụng. Tắt mở lại auto nếu chưa nhận lic mới.";
+			richTextBoxBHO.Text = "Auto Free 100% cho JX Offline by MEL";
 		}
 	}
 
@@ -11587,7 +11584,7 @@ public class Form1 : Form
 			GClass1.int_2 = 2;
 			Class66.smethod_11(Class66.smethod_1(), "textIDSudung", string_15, "", 0);
 			textBoxIDSudung.Text = string_15;
-			richTextBoxBHO.Text = "Auto V.I.P bấm tích vào nhân vật hệ thống tự kiểm tra license";
+			richTextBoxBHO.Text = "Auto Free 100% cho JX Offline by MEL";
 		}
 	}
 

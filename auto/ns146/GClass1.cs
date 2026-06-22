@@ -200,7 +200,7 @@ public class GClass1
 					array6 = new Class74[num11];
 					array7 = new Class74[num11];
 					array8 = new Class74[num11];
-					Class31.smethod_0();
+					// Class31.smethod_0(); // License check removed
 					long_3 = 0L;
 					string text = smethod_1(num10, uint_ + 256);
 					text = Class11.smethod_54(smethod_1(num10, uint_ + 768));
