@@ -1997,6 +1997,45 @@ internal class Class37
 		smethod_7(ref mapNavigationEntry_0, 355, "Sinh T|" + text, string_);
 	}
 
+	private static void smethod_108()
+	{
+		mapNavigationEntry_0 = null;
+		int_2 = null;
+		string text = "thÇn hµnh";
+		string text2 = "luyÖn c«ng";
+		smethod_5(ref mapNavigationEntry_0, text + "|µnh thÞ", null, text + "|Th«n tr", null, text + "|«n ph¸i", null, text + "|Tèng Ki", null, "Þ trÝ k");
+		smethod_3(ref mapNavigationEntry_0, "cÊp 90|" + text2);
+		smethod_4(ref mapNavigationEntry_0, "t©n thñ|" + text2, new LevelBracketMapGroup[7]
+		{
+			new LevelBracketMapGroup { levelBracket = 20, mapIds = new int[3] { 19, 7, 179 } },
+			new LevelBracketMapGroup { levelBracket = 30, mapIds = new int[6] { 193, 170, 92, 22, 4, 6 } },
+			new LevelBracketMapGroup { levelBracket = 40, mapIds = new int[4] { 21, 167, 23, 5 } },
+			new LevelBracketMapGroup { levelBracket = 50, mapIds = new int[5] { 182, 164, 38, 42, 24 } },
+			new LevelBracketMapGroup { levelBracket = 60, mapIds = new int[6] { 79, 56, 166, 114, 69, 94 } },
+			new LevelBracketMapGroup { levelBracket = 70, mapIds = new int[5] { 319, 123, 206, 72, 169 } },
+			new LevelBracketMapGroup { levelBracket = 80, mapIds = new int[6] { 224, 198, 320, 181, 201, 202 } }
+		});
+		string string_ = "POS|50304,78016,B¾c|38592,100992,Nam|49440,99520,§«ng|38976,78464|T©y";
+		smethod_7(ref mapNavigationEntry_0, 1000, "Sinh T|" + text, string_);
+		smethod_7(ref mapNavigationEntry_0, 355, "Sinh T|" + text, string_);
+		smethod_6(ref mapNavigationEntry_0, 1010, "Héi Qu¸n|Héi Qu¸n Vâ L©m|" + text, "POS|53568,107360,Héi Qu¸n Vâ L©mHéi Qu¸n_Héi Qu¸n Vâ L©m_" + text + "|56384,111392,Linh Thñy Ng­ Th«nHéi Qu¸n_Linh Thñy_" + text);
+		smethod_6(ref mapNavigationEntry_0, 1025, "HuyÒn C¬|" + text, "POS|50432,103232,HuyÒn C¬ C¸c");
+		smethod_6(ref mapNavigationEntry_0, 1011, "LuyÖn Cèc|10-80|CÊp 10|" + text, "POS|52832,101376,CÊp 10");
+		smethod_6(ref mapNavigationEntry_0, 1012, "LuyÖn Cèc|10-80|CÊp 20|" + text, "POS|52832,101376,CÊp 20");
+		smethod_6(ref mapNavigationEntry_0, 1013, "LuyÖn Cèc|10-80|CÊp 30|" + text, "POS|52832,101376,CÊp 30");
+		smethod_6(ref mapNavigationEntry_0, 1014, "LuyÖn Cèc|10-80|CÊp 40|" + text, "POS|52832,101376,CÊp 40");
+		smethod_6(ref mapNavigationEntry_0, 1015, "LuyÖn Cèc|10-80|CÊp 50|" + text, "POS|52832,101376,CÊp 50");
+		smethod_6(ref mapNavigationEntry_0, 1016, "LuyÖn Cèc|10-80|CÊp 60|" + text, "POS|52832,101376,CÊp 60");
+		smethod_6(ref mapNavigationEntry_0, 1017, "LuyÖn Cèc|10-80|CÊp 70|" + text, "POS|52832,101376,CÊp 70");
+		smethod_6(ref mapNavigationEntry_0, 1018, "LuyÖn Cèc|10-80|CÊp 80|" + text, "POS|52832,101376,CÊp 80");
+		smethod_6(ref mapNavigationEntry_0, 1019, "LuyÖn Cèc|90-180|CÊp 90|" + text, "POS|52832,101376,CÊp 90");
+		smethod_6(ref mapNavigationEntry_0, 1020, "LuyÖn Cèc|90-180|CÊp 100|" + text, "POS|52832,101376,CÊp 100");
+		smethod_6(ref mapNavigationEntry_0, 1021, "LuyÖn Cèc|90-180|CÊp 120|" + text, "POS|52832,101376,CÊp 120");
+		smethod_6(ref mapNavigationEntry_0, 1022, "LuyÖn Cèc|90-180|CÊp 140|" + text, "POS|52832,101376,CÊp 140");
+		smethod_6(ref mapNavigationEntry_0, 1023, "LuyÖn Cèc|90-180|CÊp 160|" + text, "POS|52832,101376,CÊp 160");
+		smethod_6(ref mapNavigationEntry_0, 1024, "LuyÖn Cèc|90-180|CÊp 180|" + text, "POS|52832,101376,CÊp 180");
+	}
+
 	private static void smethod_42()
 	{
 		string text = "n b¶n ®å luyÖn c«ng|2x - 9x";
@@ -6252,6 +6291,10 @@ internal class Class37
 		else if (int_1 == 12)
 		{
 			smethod_41();
+		}
+		else if (int_1 == 2000)
+		{
+			smethod_108();
 		}
 		else if (int_1 != 19)
 		{

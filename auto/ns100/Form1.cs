@@ -1481,7 +1481,7 @@ public class Form1 : Form
 
 	public static int int_5 = 0;
 
-	public static string[,] string_7 = new string[155, 6]
+	public static string[,] string_7 = new string[156, 6]
 	{
 		{ "ctcvolam1pk.com", "B¶o VËt", "622009", null, "vggame.exe", null },
 		{ "thienhavosong.net", "VËt phÈm", "05061991", null, "game.exe", null },
@@ -1637,7 +1637,8 @@ public class Form1 : Form
 		{ "jx1pk.net", "HOT", "1032", "0", "Game.exe", "1" },
 		{ "hoainiemvolam.net", "T¹p hãa", "1000", "3", "Game.exe", "1" },
 		{ "vltruyenky1.net", "N¹p ThÎ", "662044", null, "Game.exe", null },
-		{ "vldaiviet.com", "VËt PhÈm", "662045", null, "Game.exe", null }
+		{ "vldaiviet.com", "VËt PhÈm", "662045", null, "Game.exe", null },
+		{ "JX Offline - Mel", "VËt phÈm", "2000", "1,5", "Game.exe", "1" }
 	};
 
 	private static string[,] string_8 = new string[3, 6]
@@ -1783,7 +1784,7 @@ public class Form1 : Form
 
 	public static string[] string_17 = new string[3] { "Đánh Thất thành", "Đánh Tam trụ", "Đánh Tam môn đài" };
 
-	public static string[,] string_18 = new string[37, 2]
+	public static string[,] string_18 = new string[56, 2]
 	{
 		{ "Lâm An", "176" },
 		{ "Biện Kinh", "37" },
@@ -1821,6 +1822,25 @@ public class Form1 : Form
 		{ "Nam Sinh Tử đấu trường", "dông thuËt|Sinh T|Nam" },
 		{ "Bắc Sinh Tử đấu trường", "dông thuËt|Sinh T|B¾c" },
 		{ "...", "" },
+		{ "Hội Quán VL", "Héi Qu¸n|Héi Qu¸n Vâ L©m" },
+		{ "Linh Thủy Ngư Thôn", "Héi Qu¸n|Linh Thñy" },
+		{ "Huyền Cổ Các", "HuyÒn C¬" },
+		{ "...", "" },
+		{ "Tu Luyện 10", "LuyÖn Cèc|10-80|CÊp 10" },
+		{ "Tu Luyện 20", "LuyÖn Cèc|10-80|CÊp 20" },
+		{ "Tu Luyện 30", "LuyÖn Cèc|10-80|CÊp 30" },
+		{ "Tu Luyện 40", "LuyÖn Cèc|10-80|CÊp 40" },
+		{ "Tu Luyện 50", "LuyÖn Cèc|10-80|CÊp 50" },
+		{ "Tu Luyện 60", "LuyÖn Cèc|10-80|CÊp 60" },
+		{ "Tu Luyện 70", "LuyÖn Cèc|10-80|CÊp 70" },
+		{ "Tu Luyện 80", "LuyÖn Cèc|10-80|CÊp 80" },
+		{ "...", "" },
+		{ "Tu Luyện 90", "LuyÖn Cèc|90-180|CÊp 90" },
+		{ "Tu Luyện 100", "LuyÖn Cèc|90-180|CÊp 100" },
+		{ "Tu Luyện 120", "LuyÖn Cèc|90-180|CÊp 120" },
+		{ "Tu Luyện 140", "LuyÖn Cèc|90-180|CÊp 140" },
+		{ "Tu Luyện 160", "LuyÖn Cèc|90-180|CÊp 160" },
+		{ "Tu Luyện 180", "LuyÖn Cèc|90-180|CÊp 180" },
 		{ "Hướng dẫn", "" }
 	};
 
@@ -6747,65 +6767,19 @@ public class Form1 : Form
 		this.tabControl2.Size = new System.Drawing.Size(260, 106);
 		this.tabControl2.TabIndex = 163;
 		this.tabPage14.Controls.Add(this.richTextBoxBHO);
-		this.tabPage14.Controls.Add(this.label11);
-		this.tabPage14.Controls.Add(this.textBoxIDSudung);
-		this.tabPage14.Controls.Add(this.buttonTrial);
-		this.tabPage14.Controls.Add(this.buttonIDApdung);
-		this.tabPage14.Controls.Add(this.buttonDangky);
 		this.tabPage14.Location = new System.Drawing.Point(4, 24);
 		this.tabPage14.Name = "tabPage14";
 		this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
 		this.tabPage14.Size = new System.Drawing.Size(252, 78);
 		this.tabPage14.TabIndex = 0;
-		this.tabPage14.Text = "Thông tin Bang hội";
+		this.tabPage14.Text = "Thông Tin Auto";
 		this.tabPage14.UseVisualStyleBackColor = true;
 		this.richTextBoxBHO.Location = new System.Drawing.Point(1, 1);
 		this.richTextBoxBHO.Name = "richTextBoxBHO";
 		this.richTextBoxBHO.ReadOnly = true;
-		this.richTextBoxBHO.Size = new System.Drawing.Size(185, 48);
+		this.richTextBoxBHO.Size = new System.Drawing.Size(249, 73);
 		this.richTextBoxBHO.TabIndex = 142;
 		this.richTextBoxBHO.Text = "Auto Free 100% cho JX Offline by MEL";
-		this.label11.AutoSize = true;
-		this.label11.BackColor = System.Drawing.SystemColors.Control;
-		this.label11.ForeColor = System.Drawing.Color.Black;
-		this.label11.Location = new System.Drawing.Point(0, 57);
-		this.label11.Name = "label11";
-		this.label11.Size = new System.Drawing.Size(19, 15);
-		this.label11.TabIndex = 139;
-		this.label11.Text = "ID";
-		this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-		this.textBoxIDSudung.ForeColor = System.Drawing.Color.DarkRed;
-		this.textBoxIDSudung.Location = new System.Drawing.Point(20, 54);
-		this.textBoxIDSudung.Name = "textBoxIDSudung";
-		this.textBoxIDSudung.Size = new System.Drawing.Size(145, 21);
-		this.textBoxIDSudung.TabIndex = 140;
-		this.textBoxIDSudung.TextChanged += new System.EventHandler(textBoxIDSudung_TextChanged);
-		this.buttonTrial.ForeColor = System.Drawing.Color.Black;
-		this.buttonTrial.Location = new System.Drawing.Point(166, 53);
-		this.buttonTrial.Name = "buttonTrial";
-		this.buttonTrial.Size = new System.Drawing.Size(20, 23);
-		this.buttonTrial.TabIndex = 141;
-		this.buttonTrial.Text = "X";
-		this.buttonTrial.UseVisualStyleBackColor = true;
-		this.buttonTrial.Click += new System.EventHandler(buttonTrial_Click);
-		this.buttonIDApdung.ForeColor = System.Drawing.Color.Red;
-		this.buttonIDApdung.Location = new System.Drawing.Point(188, 52);
-		this.buttonIDApdung.Name = "buttonIDApdung";
-		this.buttonIDApdung.Size = new System.Drawing.Size(62, 24);
-		this.buttonIDApdung.TabIndex = 137;
-		this.buttonIDApdung.Text = "Áp dụng";
-		this.buttonIDApdung.UseVisualStyleBackColor = true;
-		this.buttonIDApdung.Click += new System.EventHandler(buttonIDApdung_Click);
-		this.buttonDangky.BackColor = System.Drawing.Color.Gold;
-		this.buttonDangky.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f);
-		this.buttonDangky.ForeColor = System.Drawing.Color.Black;
-		this.buttonDangky.Location = new System.Drawing.Point(188, 3);
-		this.buttonDangky.Name = "buttonDangky";
-		this.buttonDangky.Size = new System.Drawing.Size(62, 49);
-		this.buttonDangky.TabIndex = 135;
-		this.buttonDangky.Text = "Thông tin đăng ký";
-		this.buttonDangky.UseVisualStyleBackColor = false;
-		this.buttonDangky.Click += new System.EventHandler(buttonDangky_Click);
 		this.tabPage3.Controls.Add(this.checkBoxThu);
 		this.tabPage3.Location = new System.Drawing.Point(4, 24);
 		this.tabPage3.Name = "tabPage3";
