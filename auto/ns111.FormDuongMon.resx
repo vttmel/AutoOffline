@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="$this.Icon" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0
+ZW0uRHJhd2luZy5JY29uAgAAAAhJY29uRGF0YQhJY29uU2l6ZQcEAhNTeXN0ZW0uRHJhd2luZy5T
+aXplAgAAAAIAAAAJAwAAAAX8////E1N5c3RlbS5EcmF3aW5nLlNpemUCAAAABXdpZHRoBmhlaWdo
+dAAACAgCAAAAAAAAAAAAAAAPAwAAAA4MAAACAAABAAEAGxsAAAEAIAD4CwAAFgAAACgAAAAbAAAA
+NgAAAAEAIAAAAAAAZAsAABILAAASCwAAAAAAAAAAAABSVVr/UlVa/1JVWv9SVVr/UlVa/1JVWv9S
+VVr/UlVa/1JVWv9SVVr/UlVa/1JVWv9SVVr/UlVa/1JVWv9SVVr/UlVa/1JVWv9SVVr/UlVa/1JV
+Wv9SVVr/UlVa/1JVWv9SVVr/UlVa/1JVWv9SVVr/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA
+/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/
+AAAA/wAAAP8AAAD/AAAA/1JVWv9SVVr/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
+AP8AAAD/AAAA/1JVWv9SVVr/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA
+/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/
+AAAA/1JVWv9SVVr/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8hHCH/OTSM/0JFzv9a
+Wd7/QmHO/zFJjP8hHCH/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/1JV
+Wv9SVVr/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/zk0jP9CVd7/UlXe/0JV3v9CVd7/QnXe
+/zGq7/8xqu//MUGM/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/1JVWv9SVVr/
+AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/OTyc/0JV3v9SVe//ISBS/yE0c/9SZe//QlXe/0J13v9C
+it7/QnXe/0I8vf8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/1JVWv9SVVr/AAAA/wAA
+AP8AAAD/AAAA/wAAAP8xLFL/QmXe/0Jl3v9SZe//ECBC/xAgQv9SZe//UlXe/1JV3v9SVd7/QlXe
+/0JV3v8xPJz/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/1JVWv9SVVr/AAAA/wAAAP8AAAD/
+AAAA/wAAAP9CYc7/QnXv/0J17/9Cde//QnXv/0J17/8xde//QmXv/0Jl3v9CVd7/QlXe/0JV3v9C
+Vd7/MShS/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/1JVWv9SVVr/AAAA/wAAAP8AAAD/AAAA/yEg
+If9Cdc7/Y4q9/0J1zv9Cde//QnXv/1J1zv9zir3/MWXO/zFl7/9CZd7/QlXe/0JV3v9CVd7/QlHv
+/xAQEP8AAAD/AAAA/wAAAP8AAAD/AAAA/1JVWv9SVVr/AAAA/wAAAP8AAAD/AAAA/yk8Qv+cmq3/
+/////97f3v9Cdb3/QnWt/97Lzv//////vbq9/zFlzv9CZe//MVXe/zFVzv8xVc7/QlXe/0JFzv8p
+IDH/AAAA/wAAAP8AAAD/AAAA/1JVWv9SVVr/AAAA/wAAAP8AAAD/AAAA/0JRjP9SVVL/////////
+//9zmr3/UnWM/2NlY////////////1J1vf8xZe//MVXO/zFVzv8xVc7/QlXe/0JFzv85Ra3/MSxS
+/wAAAP8AAAD/AAAA/1JVWv9SVVr/AAAA/wAAAP8AAAD/EBhz/0JVc/9jZWP///////////+Mmr3/
+Y3Wc/4x1c////////////1J1rf8xZe//MVXe/zFVzv8xVd7/QlXv/zk4rf8pJDH/KSQx/wAAAP8A
+AAD/AAAA/1JVWv9SVVr/AAAA/wAAAP8YEEL/MWWt/0Jlvf/Oy87////////v7/9Smr3/Qoqt/+/v
+3v//////zsvO/zFVvf8xZe//MVXe/zFV3v8xVd7/MVXe/0JR7/8QEBD/AAAA/wAAAP8AAAD/AAAA
+/1JVWv9SVVr/AAAA/wAAAP8QFHP/Qore/xgolP9KZb3/rbrO/2Oqvf9j3///Usv//2Oavf+Mqs7/
+MXW9/zFl7/8xZd7/MVXe/zFV3v8xVe//QlHv/zlFzv8xLFL/AAAA/wAAAP8AAAD/AAAA/1JVWv9S
+VVr/AAAA/wAAAP8YKGv/Uprv/zFVrf8hRYz/EEVz/yFVjP9SdYz/Qqq9/0K6//8xqu//Qprv/zF1
+7/8xVd7/MVXe/zFV3v8xVe//MVX//zEwY/8xKEL/AAAA/wAAAP8AAAD/AAAA/1JVWv9SVVr/AAAA
+/wAAAP8IGFr/Uqrv/1Ka7/9Cit7/QmXO/zFFzv8xRb3/ITSM/yFVc/9Cqv//Qorv/zF17/8xVd7/
+MVXe/zFV7/9CUd7/MVX//ykwY/8AAAD/AAAA/wAAAP8AAAD/AAAA/1JVWv9SVVr/AAAA/wAAAP8Y
+EFL/MWWc/2O6//9Smu//Qorv/0J13v9Cdd7/QmXv/yE0jP8xdc7/Qorv/zFl7/8xVd7/MVXe/zFV
+7/8xQYz/OUne/zE4rf8AAAD/AAAA/wAAAP8AAAD/AAAA/1JVWv9SVVr/AAAA/wAAAP8AAAD/EAxj
+/zFVjP9Cmr3/QprO/0KK3v9Cis7/QmW9/yE0Y/85bc7/Qor//0J17/9CZd7/MVXe/zFV7/8xNIz/
+ISAh/zE4rf8QEBD/AAAA/wAAAP8AAAD/AAAA/1JVWv9SVVr/AAAA/wAAAP8AAAD/AAAA/xAMEP8Y
+EFL/EBBz/xAQe/8pRa3/ISyM/zltzv9rot7/MVFz/0J97/9Cde//QlXe/zFF7/8xOK3/AAAA/yEY
+If8hHCH/AAAA/wAAAP8AAAD/AAAA/1JVWv9SVVr/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA
+/wAAAP8hICH/EBAQ/wAAAP9CZa3/QlFz/ykoMf9CYc7/QmXe/zFF3v8xML3/EBAQ/wAAAP8AAAD/
+AAAA/wAAAP8AAAD/AAAA/1JVWv9SVVr/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8A
+AAD/EBAQ/wAAAP8AAAD/OUlz/xAQEP8AAAD/OUWt/0JF3v8xML3/EBAQ/wAAAP8AAAD/AAAA/wAA
+AP8AAAD/AAAA/1JVWv9SVVr/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA
+/wAAAP8AAAD/AAAA/yEgIf8AAAD/AAAA/zE0nP85NM7/EBAQ/wAAAP8AAAD/AAAA/wAAAP8AAAD/
+AAAA/1JVWv9SVVr/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8pKHP/IRwh/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/1JV
+Wv9SVVr/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA
+/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/1JVWv9SVVr/
+AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8A
+AAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/1JVWv9SVVr/UlVa/1JV
+Wv9SVVr/UlVa/1JVWv9SVVr/UlVa/1JVWv9SVVr/UlVa/1JVWv9SVVr/UlVa/1JVWv9SVVr/UlVa
+/1JVWv9SVVr/UlVa/1JVWv9SVVr/UlVa/1JVWv9SVVr/UlVa/1JVWv8AAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL</value></data><data name="richTextBox1.Text" xml:space="preserve"><value>Khi không có địch thủ, ac ĐM sẽ tự động xuống ngựa đặt boom. 
+Auto sẽ dùng phím F6 để đặt boom, do đó nên tránh dùng phím này để không bị trùng lắp và trong game bạn phải dùng phím kết hợp (bấm Esc -&gt; Tùy chọn hệ thống -&gt; Kết hợp )</value></data>
+  </root>

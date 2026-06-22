@@ -1,0 +1,16 @@
+# Build output
+auto/bin/
+auto/obj/
+*.pdb
+
+# VS/IDE
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+Error_Log.txt
+debug_log.txt

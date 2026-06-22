@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.5.11605.296 insiders
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kykeoxe", "auto\kykeoxe.csproj", "{656C4CE2-559E-09C3-2A1D-C56731AB6541}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{656C4CE2-559E-09C3-2A1D-C56731AB6541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{656C4CE2-559E-09C3-2A1D-C56731AB6541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{656C4CE2-559E-09C3-2A1D-C56731AB6541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{656C4CE2-559E-09C3-2A1D-C56731AB6541}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D678E092-D8BE-44D0-8BD6-A04707F5A50F}
+	EndGlobalSection
+EndGlobal
