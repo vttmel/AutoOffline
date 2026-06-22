@@ -1459,9 +1459,9 @@ public class Form1 : Form
 
 	public static string string_1 = "12.0";
 
-	public static string string_2 = "KYKeoxe";
+	public static string string_2 = "JX Offline Auto";
 
-	public static string string_3 = "KYKeoxe " + string_1;
+	public static string string_3 = "JX Offline Auto";
 
 	public static string string_4 = "KYKeoxe.exe";
 
@@ -3060,7 +3060,7 @@ public class Form1 : Form
 		this.uutien.SuspendLayout();
 		((System.ComponentModel.ISupportInitialize)this.pictureBoxQC).BeginInit();
 		base.SuspendLayout();
-		this.notifyIcon_0.Text = "AnDzai";
+		this.notifyIcon_0.Text = "JX Offline Auto";
 		this.notifyIcon_0.MouseClick += new System.Windows.Forms.MouseEventHandler(notifyIcon_0_MouseClick);
 		this.timer_3.Tick += new System.EventHandler(timer_3_Tick);
 		this.textBoxKhoangCachAccChinh.ForeColor = System.Drawing.Color.Black;
@@ -8813,7 +8813,7 @@ public class Form1 : Form
 		base.MaximizeBox = false;
 		base.Name = "Form1";
 		base.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-		this.Text = "AnDzai";
+		this.Text = "JX Offline Auto";
 		base.Load += new System.EventHandler(Form1_Load);
 		this.tabControl1.ResumeLayout(false);
 		this.tabPage1.ResumeLayout(false);
