@@ -5011,9 +5011,9 @@ internal class Class56
 			"<color=yellow>" + Form1.string_49.ToUpper(),
 			"-----------------------------------------|",
 			"<bclr=blue>=========================================|",
-			"<bclr=greend><color=green>  NhËn Dev tÝnh n\u00a8ng riªng Auto          <bclr=blue>|",
-			"<bclr=greend><color=green>  zalo : AnDzai              <bclr=blue>|",
-			"<bclr=greend><color=green>  C¶m ¬n Anh Em ®· ñng hé AnDzai<bclr=blue>        |",
+			"<bclr=greend><color=green>  Auto Free cho Vâ L©m TruyÒn Kú Offline",
+			"<bclr=greend><color=green>  Server ®­îc ph¸t triÓn bëi MEL",
+			"<bclr=greend><color=green>  Chóc Anh Em ch¬i game vui vÎ!",
 			"<bclr=blue>=========================================|",
 			"-----------------------------------------|"
 		};

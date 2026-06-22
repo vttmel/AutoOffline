@@ -272,8 +272,8 @@ internal class Class80
 						Form1.characterAccountConfig_1[num].bool_27 = false;
 						CharacterAccountConfig characterAccountConfig_ = Form1.characterAccountConfig_1[num];
 						Class75.smethod_52(characterAccountConfig_, "-------------------------------------------");
-						Class75.smethod_52(characterAccountConfig_, "<color=yellow>" + Form1.string_49.ToUpper() + " FOR PRIVATE GAME");
-						Class75.smethod_52(characterAccountConfig_, "<color=green>§\u00adîc viÕt bëi: AnDzai");
+						Class75.smethod_52(characterAccountConfig_, "<color=yellow>" + Form1.string_49.ToUpper() + " FOR OFFLINE GAME");
+						Class75.smethod_52(characterAccountConfig_, "<color=green>Auto Phi Th­¬ng M¹i 100%");
 						Class75.smethod_52(characterAccountConfig_, "<color=green>Webs:  ");
 						Class75.smethod_52(characterAccountConfig_, "-------------------------------------------");
 						Class75.smethod_52(characterAccountConfig_, "KET THUC AUTO.");

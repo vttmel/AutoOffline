@@ -137,11 +137,11 @@ internal class Class32
 				string text = Form1.string_24;
 				if (Class75.smethod_3(characterAccountConfig, Class75.uint_48, 4) > 0)
 				{
-					text = Form1.string_49 + " click npc ghÐp nép vËt phÈm event - http: //AnDzai . c o m";
+					text = Form1.string_49 + " click npc ghÐp nép vËt phÈm event - http: //Mel . c o m";
 				}
 				else if (Class24.ReadProcessMemory(characterAccountConfig.int_137, characterAccountConfig.uint_16 + Class75.uint_10 * 4, array, 1, ref int_5) && int_5 > 0 && array[0] > 0)
 				{
-					text = Form1.string_49 + " ®ang läc vËt phÈm theo ®iÒu kiÖn - http:// http: //AnDzai . c o m";
+					text = Form1.string_49 + " ®ang läc vËt phÈm theo ®iÒu kiÖn - http:// http: //Mel . c o m";
 				}
 				Class75.smethod_57(characterAccountConfig, "Chat('CH_NEARBY', '" + text + "')");
 				long_2 = Class11.smethod_27();

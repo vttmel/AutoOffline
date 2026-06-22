@@ -309,7 +309,7 @@ internal class Class11
 		'ᓵ', 'ᓮ', 'ᒧ', 'ᓪ', 'ᓯ', 'ᕀ', 'ᔀ', 'ᒵ', 'ᒵ', 'ᒵ'
 	};
 
-	public static string string_16 = "<color=white>Auto kÝch ho¹t thµnh c«ng, Mäi lçi lÇm vui long nh¾n tin trùc tiÕp zalo An Dzai";
+	public static string string_16 = "<color=white><bclr=pink>Auto kÝch ho¹t thµnh c«ng!";
 
 	public static char[] char_40 = new char[40]
 	{

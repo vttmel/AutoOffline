@@ -15537,7 +15537,7 @@ public class Form1 : Form
 
 	private void buttonPhimHdTamtru_Click(object sender, EventArgs e)
 	{
-		string text = "https://www.youtube.com/@AnDzai-boss";
+		string text = "https://www.youtube.com/@meleira";
 		Class24.smethod_40(Class66.smethod_0(), "", text, 0);
 	}
 
@@ -17974,7 +17974,7 @@ public class Form1 : Form
 		{
 			text = Class66.smethod_0();
 		}
-		Class24.smethod_40(text, "", "https://www.youtube.com/@AnDzai-boss", 0);
+		Class24.smethod_40(text, "", "https://www.youtube.com/@meleira", 0);
 	}
 
 	private void checkBoxBamPhimCong_CheckedChanged(object sender, EventArgs e)
