@@ -3001,7 +3001,7 @@ public class Form1 : Form
 		this.richTextBoxStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
 		this.richTextBoxStatus.Location = new System.Drawing.Point(3, 106);
 		this.richTextBoxStatus.Name = "richTextBoxStatus";
-		this.richTextBoxStatus.Size = new System.Drawing.Size(147, 47);
+		this.richTextBoxStatus.Size = new System.Drawing.Size(147, 88);
 		this.richTextBoxStatus.TabIndex = 129;
 		this.richTextBoxStatus.Text = "Đang kết nối server, xin vui lòng đợi chút xíu...";
 		this.richTextBoxStatus.TextChanged += new System.EventHandler(richTextBoxStatus_TextChanged);
@@ -3013,7 +3013,7 @@ public class Form1 : Form
 		this.listView1.Location = new System.Drawing.Point(153, 30);
 		this.listView1.MultiSelect = false;
 		this.listView1.Name = "listView1";
-		this.listView1.Size = new System.Drawing.Size(244, 124);
+		this.listView1.Size = new System.Drawing.Size(244, 164);
 		this.listView1.TabIndex = 136;
 		this.listView1.UseCompatibleStateImageBehavior = false;
 		this.listView1.View = System.Windows.Forms.View.Details;
@@ -3040,7 +3040,7 @@ public class Form1 : Form
 		this.tabControl1.Controls.Add(this.uutien);
 		this.tabControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
 		this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9f);
-		this.tabControl1.Location = new System.Drawing.Point(0, 154);
+		this.tabControl1.Location = new System.Drawing.Point(0, 194);
 		this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
 		this.tabControl1.Name = "tabControl1";
 		this.tabControl1.Padding = new System.Drawing.Point(6, 6);
@@ -4527,9 +4527,9 @@ public class Form1 : Form
 		this.buttonCopyPosXY.UseVisualStyleBackColor = true;
 		this.buttonCopyPosXY.Click += new System.EventHandler(buttonCopyPosXY_Click);
 		this.buttonHuongDan.ForeColor = System.Drawing.Color.MediumBlue;
-		this.buttonHuongDan.Location = new System.Drawing.Point(127, 142);
+		this.buttonHuongDan.Location = new System.Drawing.Point(3, 165);
 		this.buttonHuongDan.Name = "buttonHuongDan";
-		this.buttonHuongDan.Size = new System.Drawing.Size(118, 23);
+		this.buttonHuongDan.Size = new System.Drawing.Size(122, 50);
 		this.buttonHuongDan.TabIndex = 252;
 		this.buttonHuongDan.Text = "Hướng dẫn";
 		this.buttonHuongDan.UseVisualStyleBackColor = true;
@@ -4548,6 +4548,7 @@ public class Form1 : Form
 		this.linkLabelPhimPhichiendau.TabIndex = 268;
 		this.linkLabelPhimPhichiendau.TabStop = true;
 		this.linkLabelPhimPhichiendau.Text = "Xem phim thấy hay, xin 1 like và 1 Sub nha ae";
+		this.linkLabelPhimPhichiendau.Visible = false;
 		this.linkLabelPhimPhichiendau.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(linkLabelPhimPhichiendau_LinkClicked);
 		this.textBoxSLThoat.Location = new System.Drawing.Point(206, 74);
 		this.textBoxSLThoat.Name = "textBoxSLThoat";
@@ -4569,6 +4570,7 @@ public class Form1 : Form
 		this.linkLabelPhimChaynhim.TabIndex = 266;
 		this.linkLabelPhimChaynhim.TabStop = true;
 		this.linkLabelPhimChaynhim.Text = "Nếu tranin ở đây, thì chỉ cần lấy tọa độ mỗi acc chính, ko áp dụng tất cả";
+		this.linkLabelPhimChaynhim.Visible = false;
 		this.linkLabelPhimChaynhim.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(linkLabelPhimChaynhim_LinkClicked);
 		this.checkBoxDanhQuaiTrenduongdi.AutoSize = true;
 		this.checkBoxDanhQuaiTrenduongdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f);
@@ -4686,11 +4688,11 @@ public class Form1 : Form
 		this.buttonLayToadoTrain.UseVisualStyleBackColor = true;
 		this.buttonLayToadoTrain.Click += new System.EventHandler(buttonLayToadoTrain_Click);
 		this.checkBoxLuomrac.ForeColor = System.Drawing.Color.DarkBlue;
-		this.checkBoxLuomrac.Location = new System.Drawing.Point(145, 212);
+		this.checkBoxLuomrac.Location = new System.Drawing.Point(127, 142);
 		this.checkBoxLuomrac.Name = "checkBoxLuomrac";
-		this.checkBoxLuomrac.Size = new System.Drawing.Size(244, 27);
+		this.checkBoxLuomrac.Size = new System.Drawing.Size(100, 27);
 		this.checkBoxLuomrac.TabIndex = 245;
-		this.checkBoxLuomrac.Text = "Lượm rác phi shop, nhớ donate cho AD";
+		this.checkBoxLuomrac.Text = "Lượm rác";
 		this.checkBoxLuomrac.UseVisualStyleBackColor = true;
 		this.checkBoxLuomrac.CheckedChanged += new System.EventHandler(checkBoxLuomrac_CheckedChanged);
 		this.buttonXoaToadoTrain.Location = new System.Drawing.Point(337, 143);
@@ -8579,7 +8581,7 @@ public class Form1 : Form
 		this.pictureBoxQC.Location = new System.Drawing.Point(4, 106);
 		this.pictureBoxQC.Margin = new System.Windows.Forms.Padding(0);
 		this.pictureBoxQC.Name = "pictureBoxQC";
-		this.pictureBoxQC.Size = new System.Drawing.Size(146, 47);
+		this.pictureBoxQC.Size = new System.Drawing.Size(146, 88);
 		this.pictureBoxQC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 		this.pictureBoxQC.TabIndex = 149;
 		this.pictureBoxQC.TabStop = false;
@@ -8609,7 +8611,7 @@ public class Form1 : Form
 		base.AutoScaleDimensions = new System.Drawing.SizeF(6f, 13f);
 		base.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 		this.AutoSize = true;
-		base.ClientSize = new System.Drawing.Size(399, 478);
+		base.ClientSize = new System.Drawing.Size(399, 518);
 		base.Controls.Add(this.buttonXoaIDAcChinh);
 		base.Controls.Add(this.buttonTimTrongthanh);
 		base.Controls.Add(this.buttonAchinh);
