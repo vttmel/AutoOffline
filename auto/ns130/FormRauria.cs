@@ -1963,7 +1963,7 @@ public class FormRauria : Form
 
 	private void buttonHelp_Click(object sender, EventArgs e)
 	{
-		string newValue = "https://www.facebook.com/   /";
+		string newValue = "https://www.facebook.com/share/p/18w1wjUDoF/   /";
 		string text = Class11.smethod_72("dVRPaxNBFL/vp3hHlXWh8RZESNPQSmwqtqV6TCZld0kzm252C3uUHoqIYOmpiJg15KBNsBpB3EFymNjvMd/E92Z386/2Mklm3vz+vTfZ2t+pbcJGqQYbTyv7UK3swMsKbJdeQXWrVDaM547bBufmWokP3IamSq44BCqJXZiey89REQ4q67vGPeZ1ImjKmMOJ7HkQ+HLIHWiGkRJnAXCVTEJoOfInYrSV+ISXCbLP7luGsemqpA9dJUbA5BgK0JZxZOoVGkjFsdpV4jUh4OcpB1uJdy4cyV5atJYVt9z6fLOAyA9gW58XjYewrpGY40GdQcdRYgCcpKKNMS7TU5TGHZWMOqmFjiN/4FYgNT/SYvkYgtRDQ8YenCjxlpyOCJE5csQdC6ppAZdfOebxG78uAjF9yJS45LaZFh1pysUi38V9OyNF/BiTbBDXcaiSQQS+EueuhZbKziFrpWox1AGDxyVGpiIMM/lzt0jLeoK3a8ROeRRMeDQPhWnRy4EsqkO6rOb/WaSys15r2dxWybcA1cs+t+ddKVBXSrmorGkrxOxWgmnD73SfgQVy2EZ9h4vCAt9DEN/z2lkAezhNySTIOqCru/WwmM/Isq78ePVkbWbYTVnzyaZ4hnpmmEPPAMf2OKzPcYiFrsZgo4xRgMHs4rYex0Y2q0q8gRMc+TNGIYoLF+jtLPGuPA1rNVGqS99qmCq65YzOtSqitoya7cmeC37dzJ5tLiYzgaqSiSa/hIPSCxPKe2Vcnk3fm4RAw4qdjt3ZL25TIB9x4+YaNdBwQ8Prdk3d5F+BxrowodPCvuB/i7jKlWu9M8cFYH+/0Bgo8T3lp6eUyyIHlvEP").Replace("WEBS", newValue);
 		FormTip.smethod_0(Form1.string_49, text, 600000, 440, 300);
 		string string_ = Environment.GetEnvironmentVariable("programfiles") + "\\Google\\Chrome\\Application\\chrome.exe";
@@ -2505,7 +2505,7 @@ public class FormRauria : Form
 
 	private void buttonPhimHd1_Click(object sender, EventArgs e)
 	{
-		string text = "https://www.facebook.com/   /";
+		string text = "https://www.facebook.com/share/p/18w1wjUDoF/   /";
 		string text2 = "Phim hướng dẫn tại đây: " + text + "||(copy dán vào trình duyệt nếu không mở được)";
 		FormTip.smethod_0(Form1.string_49, text2, 600000, 440, 100);
 		string string_ = Environment.GetEnvironmentVariable("programfiles") + "\\Google\\Chrome\\Application\\chrome.exe";
@@ -2647,7 +2647,7 @@ public class FormRauria : Form
 
 	private void labelMatma_Click(object sender, EventArgs e)
 	{
-		string text = "https://www.facebook.com/   /";
+		string text = "https://www.facebook.com/share/p/18w1wjUDoF/   /";
 		string text2 = "Phim hướng dẫn tại đây: " + text + "||(copy dán vào trình duyệt nếu không mở được)";
 		FormTip.smethod_0(Form1.string_49, text2, 600000, 440, 100);
 		string string_ = Environment.GetEnvironmentVariable("programfiles") + "\\Google\\Chrome\\Application\\chrome.exe";
@@ -2718,7 +2718,7 @@ public class FormRauria : Form
 
 	private void button1_Click(object sender, EventArgs e)
 	{
-		string text = "https://www.facebook.com/   /";
+		string text = "https://www.facebook.com/share/p/18w1wjUDoF/   /";
 		string string_ = Environment.GetEnvironmentVariable("programfiles") + "\\Google\\Chrome\\Application\\chrome.exe";
 		if (!Class11.smethod_17(string_))
 		{

@@ -3013,7 +3013,7 @@ public class Form1 : Form
 		this.listView1.Location = new System.Drawing.Point(153, 30);
 		this.listView1.MultiSelect = false;
 		this.listView1.Name = "listView1";
-		this.listView1.Size = new System.Drawing.Size(244, 164);
+		this.listView1.Size = new System.Drawing.Size(244, 183);
 		this.listView1.TabIndex = 136;
 		this.listView1.UseCompatibleStateImageBehavior = false;
 		this.listView1.View = System.Windows.Forms.View.Details;
@@ -3040,7 +3040,7 @@ public class Form1 : Form
 		this.tabControl1.Controls.Add(this.uutien);
 		this.tabControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
 		this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9f);
-		this.tabControl1.Location = new System.Drawing.Point(0, 194);
+		this.tabControl1.Location = new System.Drawing.Point(0, 213);
 		this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
 		this.tabControl1.Name = "tabControl1";
 		this.tabControl1.Padding = new System.Drawing.Point(6, 6);
@@ -8611,7 +8611,7 @@ public class Form1 : Form
 		base.AutoScaleDimensions = new System.Drawing.SizeF(6f, 13f);
 		base.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 		this.AutoSize = true;
-		base.ClientSize = new System.Drawing.Size(399, 518);
+		base.ClientSize = new System.Drawing.Size(399, 537);
 		base.Controls.Add(this.buttonXoaIDAcChinh);
 		base.Controls.Add(this.buttonTimTrongthanh);
 		base.Controls.Add(this.buttonAchinh);
@@ -22013,7 +22013,7 @@ public class Form1 : Form
 
 	private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 	{
-		string fileName = "https://www.facebook.com/share/v/1BtV5wmSFg/";
+		string fileName = "https://www.facebook.com/share/p/18w1wjUDoF/";
 		Process.Start(fileName);
 	}
 
@@ -22210,7 +22210,7 @@ public class Form1 : Form
 
 	private void method_62(object sender, LinkLabelLinkClickedEventArgs e)
 	{
-		Process.Start("https://www.facebook.com/share/v/1CK65ukWXp/");
+		Process.Start("https://www.facebook.com/share/p/18w1wjUDoF/");
 	}
 
 	private void checkDungHieuUng_CheckedChanged(object sender, EventArgs e)
@@ -22512,7 +22512,7 @@ public class Form1 : Form
 
 	private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 	{
-		Process.Start("https://www.facebook.com/share/v/1FJWEpr5Eb/");
+		Process.Start("https://www.facebook.com/share/p/18w1wjUDoF/");
 	}
 
 	private void comboBoxSelectOverlayItemCount_SelectedIndexChanged(object sender, EventArgs e)

@@ -1101,7 +1101,7 @@ public class Combo : Form
 
 	private void buttonPhimHuongdan_Click(object sender, EventArgs e)
 	{
-		string string_ = "https://www.youtube.com/watch?v=1duqVxbJRKk";
+		string string_ = "https://www.youtube.com/@meleira";
 		Class24.smethod_40(Class66.smethod_0(), "", string_, 0);
 	}
 

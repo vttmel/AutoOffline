@@ -2345,7 +2345,7 @@ public class FormLogin : Form
 
 	private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 	{
-		string fileName = "https://www.facebook.com/share/v/1BtV5wmSFg/";
+		string fileName = "https://www.facebook.com/share/p/18w1wjUDoF/";
 		Process.Start(fileName);
 	}
 }
