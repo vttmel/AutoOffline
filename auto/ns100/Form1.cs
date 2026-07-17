@@ -1573,6 +1573,8 @@ public class Form1 : Form
 
 	public static int int_40 = Class66.smethod_4("BossTruocNguoiSau", 0, "0");
 
+	public static int flagDanhNhanVatBot = Class66.smethod_4("flagDanhNhanVatBot", 0, "0");
+
 	public static int int_41 = Class66.smethod_4("ChetNamImAll", 0, "0");
 
 	public static int int_42 = Class66.smethod_4("fNamImONOFF", 0, "0");

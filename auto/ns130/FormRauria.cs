@@ -221,6 +221,8 @@ public class FormRauria : Form
 
 	private CheckBox checkBoxDanhKhongten;
 
+	private CheckBox checkBoxDanhNhanVatBot;
+
 	private Button buttonTatFirewall;
 
 	private TextBox textBox1;
@@ -363,6 +365,7 @@ public class FormRauria : Form
 		this.textBoxTienToida = new System.Windows.Forms.TextBox();
 		this.textBoxValueDelay = new System.Windows.Forms.TextBox();
 		this.checkBoxDanhKhongten = new System.Windows.Forms.CheckBox();
+		this.checkBoxDanhNhanVatBot = new System.Windows.Forms.CheckBox();
 		this.checkBoxMouseDrag = new System.Windows.Forms.CheckBox();
 		this.checkBoxTatThongbaoDame = new System.Windows.Forms.CheckBox();
 		this.labelMatma = new System.Windows.Forms.Label();
@@ -795,7 +798,7 @@ public class FormRauria : Form
 		this.tabControl1.Location = new System.Drawing.Point(0, 0);
 		this.tabControl1.Name = "tabControl1";
 		this.tabControl1.SelectedIndex = 0;
-		this.tabControl1.Size = new System.Drawing.Size(497, 460);
+		this.tabControl1.Size = new System.Drawing.Size(497, 500);
 		this.tabControl1.TabIndex = 326;
 		this.tabPage1.Controls.Add(this.buttonEpDanhBang);
 		this.tabPage1.Controls.Add(this.buttonEpPT);
@@ -815,7 +818,7 @@ public class FormRauria : Form
 		this.tabPage1.Location = new System.Drawing.Point(4, 24);
 		this.tabPage1.Name = "tabPage1";
 		this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-		this.tabPage1.Size = new System.Drawing.Size(489, 432);
+		this.tabPage1.Size = new System.Drawing.Size(489, 472);
 		this.tabPage1.TabIndex = 0;
 		this.tabPage1.Text = "Thiết lập chung";
 		this.tabPage1.UseVisualStyleBackColor = true;
@@ -868,6 +871,7 @@ public class FormRauria : Form
 		this.groupBox1.Controls.Add(this.textBoxTiepCan);
 		this.groupBox1.Controls.Add(this.textBoxKhoangCachlenNgua);
 		this.groupBox1.Controls.Add(this.checkBoxDanhKhongten);
+		this.groupBox1.Controls.Add(this.checkBoxDanhNhanVatBot);
 		this.groupBox1.Controls.Add(this.checkBoxMouseDrag);
 		this.groupBox1.Controls.Add(this.checkBoxTatThongbaoDame);
 		this.groupBox1.Controls.Add(this.labelMatma);
@@ -897,7 +901,7 @@ public class FormRauria : Form
 		this.groupBox1.Controls.Add(this.checkBoxBaoCuusat);
 		this.groupBox1.Location = new System.Drawing.Point(1, 134);
 		this.groupBox1.Name = "groupBox1";
-		this.groupBox1.Size = new System.Drawing.Size(481, 297);
+		this.groupBox1.Size = new System.Drawing.Size(481, 337);
 		this.groupBox1.TabIndex = 441;
 		this.groupBox1.TabStop = false;
 		this.groupBox1.Text = "Thiết lập dùng chung cho tất cả ac";
@@ -920,6 +924,15 @@ public class FormRauria : Form
 		this.checkBoxDanhKhongten.Text = "Đánh người không có tên -loạn chiến";
 		this.checkBoxDanhKhongten.UseVisualStyleBackColor = false;
 		this.checkBoxDanhKhongten.CheckedChanged += new System.EventHandler(checkBoxDanhKhongten_CheckedChanged);
+		this.checkBoxDanhNhanVatBot.BackColor = System.Drawing.SystemColors.Control;
+		this.checkBoxDanhNhanVatBot.ForeColor = System.Drawing.Color.DarkRed;
+		this.checkBoxDanhNhanVatBot.Location = new System.Drawing.Point(4, 297);
+		this.checkBoxDanhNhanVatBot.Name = "checkBoxDanhNhanVatBot";
+		this.checkBoxDanhNhanVatBot.Size = new System.Drawing.Size(220, 35);
+		this.checkBoxDanhNhanVatBot.TabIndex = 473;
+		this.checkBoxDanhNhanVatBot.Text = "Đánh nhân vật Bot";
+		this.checkBoxDanhNhanVatBot.UseVisualStyleBackColor = false;
+		this.checkBoxDanhNhanVatBot.CheckedChanged += new System.EventHandler(checkBoxDanhNhanVatBot_CheckedChanged);
 		this.checkBoxMouseDrag.AutoSize = true;
 		this.checkBoxMouseDrag.BackColor = System.Drawing.SystemColors.Control;
 		this.checkBoxMouseDrag.ForeColor = System.Drawing.Color.Black;
@@ -1295,7 +1308,7 @@ public class FormRauria : Form
 		this.labelThongbao1.Visible = false;
 		base.AutoScaleDimensions = new System.Drawing.SizeF(7f, 15f);
 		base.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-		base.ClientSize = new System.Drawing.Size(497, 459);
+		base.ClientSize = new System.Drawing.Size(497, 499);
 		base.Controls.Add(this.tabControl1);
 		this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9f);
 		base.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -1437,6 +1450,7 @@ public class FormRauria : Form
 		checkBoxKhongChaybo.Checked = Form1.int_23 > 0;
 		checkBoxAcChinhNghelenh.Checked = Form1.int_11 > 0;
 		checkBoxDanhKhongten.Checked = Form1.int_123 > 0;
+		checkBoxDanhNhanVatBot.Checked = Form1.flagDanhNhanVatBot > 0;
 		checkBoxTHP_Smdb.Checked = Form1.int_15 > 0;
 		checkBoxXuongngua.Checked = Form1.int_109 > 0;
 		checkBoxRoom.Checked = Form1.int_12 > 0;
@@ -2682,6 +2696,15 @@ public class FormRauria : Form
 		{
 			Form1.int_123 = Convert.ToByte(checkBoxDanhKhongten.Checked);
 			Class66.smethod_11(Class66.smethod_1(), "flagDanhKhongten", Form1.int_123, "", 0);
+		}
+	}
+
+	private void checkBoxDanhNhanVatBot_CheckedChanged(object sender, EventArgs e)
+	{
+		if (timer_0.Enabled && bool_1)
+		{
+			Form1.flagDanhNhanVatBot = Convert.ToByte(checkBoxDanhNhanVatBot.Checked);
+			Class66.smethod_11(Class66.smethod_1(), "flagDanhNhanVatBot", Form1.flagDanhNhanVatBot, "", 0);
 		}
 	}
 

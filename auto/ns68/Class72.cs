@@ -21,6 +21,8 @@ namespace ns68;
 
 internal class Class72
 {
+	private static System.Collections.Generic.HashSet<string> hashSet_debugBotState = new System.Collections.Generic.HashSet<string>();
+
 	public static bool bool_0 = false;
 
 	public static int[] int_0 = null;
@@ -575,7 +577,33 @@ internal class Class72
 							{
 								Class24.ReadProcessMemory(characterAccountConfig_0.int_137, num19 + Class56.memorySignatureScanConfig_43.uint_0, array, 4, ref int_8);
 								int num22 = BitConverter.ToInt32(array, 0);
-								if (num20 >= 0 && num20 <= 1 && (num20 != 1 || (num22 > 0 && array5[0] != 0 && array5[1] != 0)))
+								if (num20 == 1)
+								{
+									try
+									{
+										byte[] arrayDbgName = new byte[60];
+										Class24.ReadProcessMemory(characterAccountConfig_0.int_137, num19 + Class56.memorySignatureScanConfig_16.uint_0, arrayDbgName, arrayDbgName.Length, ref int_8);
+										string dbgName = Class1.smethod_3(arrayDbgName);
+										byte[] arrayDbg = new byte[4];
+										Class24.ReadProcessMemory(characterAccountConfig_0.int_137, num19 + Class56.memorySignatureScanConfig_55.uint_0, arrayDbg, 4, ref int_8);
+										int dbgDoing = BitConverter.ToInt32(arrayDbg, 0);
+										Class24.ReadProcessMemory(characterAccountConfig_0.int_137, num19 + Class56.memorySignatureScanConfig_54.uint_0, arrayDbg, 4, ref int_8);
+										int dbgColor = BitConverter.ToInt32(arrayDbg, 0);
+										Class24.ReadProcessMemory(characterAccountConfig_0.int_137, num19 + Class56.memorySignatureScanConfig_56.uint_0, arrayDbg, 4, ref int_8);
+										int dbgKiller = BitConverter.ToInt32(arrayDbg, 0);
+										Class24.ReadProcessMemory(characterAccountConfig_0.int_137, num19 + Class56.memorySignatureScanConfig_50.uint_0, arrayDbg, 4, ref int_8);
+										int dbgExists = BitConverter.ToInt32(arrayDbg, 0);
+										string dbgKey = dbgName + "|fight=" + num22 + "|doing=" + dbgDoing + "|color=" + dbgColor + "|killer=" + dbgKiller + "|exists=" + dbgExists;
+										if (hashSet_debugBotState.Add(dbgKey))
+										{
+											System.IO.File.AppendAllText(System.IO.Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "debug_bot_state.txt"), DateTime.Now + " | " + dbgKey + Environment.NewLine);
+										}
+									}
+									catch
+									{
+									}
+								}
+								if (num20 >= 0 && num20 <= 1 && (num20 != 1 || ((num22 > 0 || Form1.flagDanhNhanVatBot > 0) && array5[0] != 0 && array5[1] != 0)))
 								{
 									Class24.ReadProcessMemory(characterAccountConfig_0.int_137, num19 + Class56.memorySignatureScanConfig_55.uint_0, array, 4, ref int_8);
 									int num23 = BitConverter.ToInt32(array, 0);
@@ -758,7 +786,7 @@ internal class Class72
 													}
 													else
 													{
-														if (Form1.int_34 <= 0 || num22 <= 0 || num12 > 0 || num25 == 0 || num10 == 0 || (Form1.int_39 <= 0 && (num23 == 3 || num23 == 4)))
+														if (Form1.int_34 <= 0 || (num22 <= 0 && (Form1.flagDanhNhanVatBot <= 0 || num25 == num10)) || num12 > 0 || num25 == 0 || num10 == 0 || (Form1.int_39 <= 0 && (num23 == 3 || num23 == 4)))
 														{
 															break;
 														}
@@ -875,7 +903,14 @@ internal class Class72
 															}
 															Class24.ReadProcessMemory(characterAccountConfig_0.int_137, num19 + Class56.memorySignatureScanConfig_56.uint_0, array, 4, ref int_8);
 															int num42 = BitConverter.ToInt32(array, 0);
-															if (num11 + num42 <= 1)
+															if (Form1.flagDanhNhanVatBot > 0)
+															{
+																if (num11 <= 0)
+																{
+																	break;
+																}
+															}
+															else if (num11 + num42 <= 1)
 															{
 																break;
 															}
@@ -1199,7 +1234,33 @@ internal class Class72
 					}
 					Class24.ReadProcessMemory(characterAccountConfig_0.int_137, num20 + Class56.memorySignatureScanConfig_43.uint_0, array4, 4, ref int_8);
 					int num23 = BitConverter.ToInt32(array4, 0);
-					if (num21 > 0 && num23 <= 0)
+					if (num21 == 1)
+					{
+						try
+						{
+							byte[] arrayDbgName = new byte[60];
+							Class24.ReadProcessMemory(characterAccountConfig_0.int_137, num20 + Class56.memorySignatureScanConfig_16.uint_0, arrayDbgName, arrayDbgName.Length, ref int_8);
+							string dbgName = Class1.smethod_3(arrayDbgName);
+							byte[] arrayDbg = new byte[4];
+							Class24.ReadProcessMemory(characterAccountConfig_0.int_137, num20 + Class56.memorySignatureScanConfig_55.uint_0, arrayDbg, 4, ref int_8);
+							int dbgDoing = BitConverter.ToInt32(arrayDbg, 0);
+							Class24.ReadProcessMemory(characterAccountConfig_0.int_137, num20 + Class56.memorySignatureScanConfig_54.uint_0, arrayDbg, 4, ref int_8);
+							int dbgColor = BitConverter.ToInt32(arrayDbg, 0);
+							Class24.ReadProcessMemory(characterAccountConfig_0.int_137, num20 + Class56.memorySignatureScanConfig_56.uint_0, arrayDbg, 4, ref int_8);
+							int dbgKiller = BitConverter.ToInt32(arrayDbg, 0);
+							Class24.ReadProcessMemory(characterAccountConfig_0.int_137, num20 + Class56.memorySignatureScanConfig_50.uint_0, arrayDbg, 4, ref int_8);
+							int dbgExists = BitConverter.ToInt32(arrayDbg, 0);
+							string dbgKey = dbgName + "|fight=" + num23 + "|doing=" + dbgDoing + "|color=" + dbgColor + "|killer=" + dbgKiller + "|exists=" + dbgExists;
+							if (hashSet_debugBotState.Add(dbgKey))
+							{
+								System.IO.File.AppendAllText(System.IO.Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "debug_bot_state.txt"), DateTime.Now + " | smethod_6 | " + dbgKey + Environment.NewLine);
+							}
+						}
+						catch
+						{
+						}
+					}
+					if (num21 > 0 && num23 <= 0 && Form1.flagDanhNhanVatBot <= 0)
 					{
 						continue;
 					}
@@ -1382,7 +1443,7 @@ internal class Class72
 							}
 							else
 							{
-								if (Form1.int_34 <= 0 || num23 <= 0 || num26 == 0 || num10 == 0 || (Form1.int_39 <= 0 && (num24 == 3 || num24 == 4)))
+								if (Form1.int_34 <= 0 || (num23 <= 0 && (Form1.flagDanhNhanVatBot <= 0 || num26 == num10)) || num26 == 0 || num10 == 0 || (Form1.int_39 <= 0 && (num24 == 3 || num24 == 4)))
 								{
 									break;
 								}
@@ -1472,7 +1533,14 @@ internal class Class72
 									}
 									Class24.ReadProcessMemory(characterAccountConfig_0.int_137, num20 + Class56.memorySignatureScanConfig_56.uint_0, array4, 4, ref int_8);
 									int num43 = BitConverter.ToInt32(array4, 0);
-									if (num11 + num43 <= 1)
+									if (Form1.flagDanhNhanVatBot > 0)
+									{
+										if (num11 <= 0)
+										{
+											break;
+										}
+									}
+									else if (num11 + num43 <= 1)
 									{
 										break;
 									}
