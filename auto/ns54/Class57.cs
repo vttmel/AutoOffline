@@ -45,6 +45,64 @@ namespace ns54;
 
 internal class Class57
 {
+	private static System.Collections.Generic.Dictionary<int, long> dict_botStuckStart = new System.Collections.Generic.Dictionary<int, long>();
+
+	private static System.Collections.Generic.Dictionary<int, long> dict_botBlacklist = new System.Collections.Generic.Dictionary<int, long>();
+
+	private static System.Collections.Generic.Dictionary<int, int> dict_botHp = new System.Collections.Generic.Dictionary<int, int>();
+
+	private static bool smethod_botShouldSkip(int int_137, uint uint_npcBase, int int_idx)
+	{
+		try
+		{
+			int int_dummy = 0;
+			byte[] array_b = new byte[4];
+			uint uint_ent = uint_npcBase + (uint)(int_idx * (int)Class56.memorySignatureScanConfig_15.uint_0);
+			Class24.ReadProcessMemory(int_137, uint_ent + Class56.memorySignatureScanConfig_52.uint_0, array_b, 4, ref int_dummy);
+			int int_type = BitConverter.ToInt32(array_b, 0);
+			if (int_type <= 0)
+			{
+				return false;
+			}
+			Class24.ReadProcessMemory(int_137, uint_ent, array_b, 4, ref int_dummy);
+			int int_id = BitConverter.ToInt32(array_b, 0);
+			if (int_id == 0 || int_id == -1)
+			{
+				return false;
+			}
+			long long_now = DateTime.Now.Ticks;
+			long long_thresholdTicks = 15000000L;
+			long long_expiryTicks = 50000000L;
+			if (dict_botBlacklist.ContainsKey(int_id))
+			{
+				if (long_now - dict_botBlacklist[int_id] < long_expiryTicks)
+				{
+					return true;
+				}
+				dict_botBlacklist.Remove(int_id);
+			}
+			Class24.ReadProcessMemory(int_137, uint_ent + Class56.memorySignatureScanConfig_45.uint_0, array_b, 4, ref int_dummy);
+			int int_hp = BitConverter.ToInt32(array_b, 0);
+			if (!dict_botHp.ContainsKey(int_id) || dict_botHp[int_id] != int_hp)
+			{
+				dict_botHp[int_id] = int_hp;
+				dict_botStuckStart[int_id] = long_now;
+				return false;
+			}
+			if (long_now - dict_botStuckStart[int_id] > long_thresholdTicks)
+			{
+				dict_botBlacklist[int_id] = long_now;
+				dict_botStuckStart.Remove(int_id);
+				dict_botHp.Remove(int_id);
+				return true;
+			}
+		}
+		catch
+		{
+		}
+		return false;
+	}
+
 	private static uint[,] uint_0 = new uint[13, 2]
 	{
 		{ 50433u, 104412u },
@@ -2209,6 +2267,11 @@ internal class Class57
 														}
 														Thread.Sleep(1);
 													}
+													if (Form1.flagDanhNhanVatBot > 0 && smethod_botShouldSkip(characterAccountConfig.int_137, num35, num51))
+													{
+														Class24.WriteProcessMemory(characterAccountConfig.int_137, num36 + Class56.memorySignatureScanConfig_72.uint_0, byte_, 4, ref int_6);
+														break;
+													}
 													Class24.WriteProcessMemory(characterAccountConfig.int_137, num36 + Class56.memorySignatureScanConfig_161.uint_0 - 8, BitConverter.GetBytes(Class83.smethod_13(characterAccountConfig)), 4, ref int_6);
 													Class24.WriteProcessMemory(characterAccountConfig.int_137, num36 + Class56.memorySignatureScanConfig_31.uint_0, BitConverter.GetBytes(num49), 4, ref int_6);
 													Class24.WriteProcessMemory(characterAccountConfig.int_137, num36 + Class56.memorySignatureScanConfig_72.uint_0, BitConverter.GetBytes(num51), 4, ref int_6);
@@ -2414,6 +2477,11 @@ internal class Class57
 												}
 												if (characterAccountConfig.gstruct50_0.int_0 == 0 || Class72.smethod_10(characterAccountConfig, (uint)num51) <= 0)
 												{
+													if (Form1.flagDanhNhanVatBot > 0 && smethod_botShouldSkip(characterAccountConfig.int_137, num35, num51))
+													{
+														Class24.WriteProcessMemory(characterAccountConfig.int_137, num36 + Class56.memorySignatureScanConfig_72.uint_0, byte_, 4, ref int_6);
+														break;
+													}
 													Class24.WriteProcessMemory(characterAccountConfig.int_137, num36 + Class56.memorySignatureScanConfig_161.uint_0 - 8, BitConverter.GetBytes(Class83.smethod_13(characterAccountConfig)), 4, ref int_6);
 													Class24.WriteProcessMemory(characterAccountConfig.int_137, num36 + Class56.memorySignatureScanConfig_31.uint_0, BitConverter.GetBytes(num49), 4, ref int_6);
 													Class24.WriteProcessMemory(characterAccountConfig.int_137, num36 + Class56.memorySignatureScanConfig_72.uint_0, BitConverter.GetBytes(num51), 4, ref int_6);
