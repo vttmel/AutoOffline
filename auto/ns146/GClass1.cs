@@ -219,27 +219,12 @@ public class GClass1
 				}
 				if (num3 == 0)
 				{
-					num3 = 1;
-					if (num7 == 0)
+					// Network version-check bypassed
+					if (string_4 == null || string_4 == string.Empty)
 					{
-						Class11.string_17 = new string[1] { "Đang kiểm tra phiên bản, xin chờ chút xíu..." };
+						string_4 = Form1.string_1;
 					}
-					else
-					{
-						Class11.string_17 = new string[1] { "Đang thử kiểm tra phiên bản lần thứ " + (num3 + 1) };
-					}
-					for (int i = 0; i < array4.Length; i++)
-					{
-						array4[i] = new Class74
-						{
-							object_0 = "KYKeoxe.txt",
-							string_1 = Class9.string_1[i],
-							bool_0 = false,
-							int_0 = i + 1
-						};
-						new Thread(array4[i].method_6).Start();
-					}
-					Thread.Sleep(800);
+					num3 = 2;
 				}
 				if (num3 == 1 || num3 == -1)
 				{

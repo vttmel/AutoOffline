@@ -1499,7 +1499,7 @@ public class Form1 : Form
 
 	public static int int_6 = 0;
 
-	public static int int_7 = 1;
+	public static int int_7 = 0; // Default matches int_6 so the int_7 <= int_6 version gate passes without an online version-check
 
 	public static bool bool_16 = false;
 
@@ -3003,7 +3003,7 @@ public class Form1 : Form
 		this.richTextBoxStatus.Name = "richTextBoxStatus";
 		this.richTextBoxStatus.Size = new System.Drawing.Size(147, 88);
 		this.richTextBoxStatus.TabIndex = 129;
-		this.richTextBoxStatus.Text = "Đang kết nối server, xin vui lòng đợi chút xíu...";
+		this.richTextBoxStatus.Text = string.Empty;
 		this.richTextBoxStatus.TextChanged += new System.EventHandler(richTextBoxStatus_TextChanged);
 		this.listView1.CheckBoxes = true;
 		this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[4] { this.columnHeader_0, this.columnHeader_1, this.columnHeader_2, this.columnHeader_5 });
@@ -9895,7 +9895,8 @@ public class Form1 : Form
 				}
 				else
 				{
-					Class95.int_0 = (int)Class51.smethod_1("volam.zing.vn");
+					// Blocking network ping to volam.zing.vn removed (froze the UI status when unreachable)
+					Class95.int_0 = 400;
 				}
 				if (Class95.int_0 < 200)
 				{
