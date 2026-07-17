@@ -14,3 +14,6 @@ auto/obj/
 *.log
 Error_Log.txt
 debug_log.txt
+
+# Auto tham khảo (không thuộc dự án)
+AutoTaDiTimEm/
